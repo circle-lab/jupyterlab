@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+    web:
+        build: jupyterlab
+        image: jupyter-lab-python3.9.1
+        container_name: jupyter-lab
+        ports:
+            - 18888:8888
+        working_dir: /home/python/doc
+        command: jupyter lab --ip=* --no-browser
