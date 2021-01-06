@@ -10,7 +10,7 @@ RUN useradd -m -d /home/python python \
 USER python
 
 WORKDIR /home/python
-COPY ./jupyter_lab_config.py .jupyter/.
+COPY ./jupyter_lab_config.py ./.jupyter/.
 
 EXPOSE 8888
  
